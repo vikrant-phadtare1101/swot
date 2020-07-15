@@ -3,6 +3,7 @@ package swot
 fun isAcademic(email: String): Boolean {
     val parts = domainParts(email)
     return !isBlacklisted(parts) && (isUnderTLD(parts) || findSchoolNames(parts).isNotEmpty())
+    //cpmment aaded by vikrant
 }
 
 fun findSchoolNames(emailOrDomain: String): List<String> {
